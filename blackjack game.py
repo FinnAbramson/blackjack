@@ -89,9 +89,13 @@ while(dealerValue<21):
 #handle win cons
 if(playerValue > 21):
     print("You bust!")
+    exit
 if((playerValue > dealerValue) and playerValue <= 21):
     print("You won, good hand!")
+    exit
 if((playerValue < dealerValue) and dealerValue <= 21):
     print("Dealer wins, nice try")
+    exit
 if((playerValue < dealerValue) and dealerValue > 21):
     print("Dealer Bust! You win!")
+    exit
